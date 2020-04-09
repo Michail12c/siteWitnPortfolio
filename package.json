@@ -4,7 +4,8 @@
   "description": "site portfolion on Node js express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev":"nodemon index.js"
   },
   "keywords": [],
   "author": "Mychailo Tsoma",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/Michail12c/siteWitnPortfolio/issues"
   },
-  "homepage": "https://github.com/Michail12c/siteWitnPortfolio#readme"
+  "homepage": "https://github.com/Michail12c/siteWitnPortfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
 }
