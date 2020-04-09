@@ -1,0 +1,20 @@
+{
+  "name": "sitewithportfolio",
+  "version": "1.0.0",
+  "description": "site portfolion on Node js express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mychailo Tsoma",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Michail12c/siteWitnPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Michail12c/siteWitnPortfolio/issues"
+  },
+  "homepage": "https://github.com/Michail12c/siteWitnPortfolio#readme"
+}

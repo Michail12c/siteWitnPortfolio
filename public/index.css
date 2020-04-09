@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-wrapper{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.parallax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+.title{
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
+}
+.parallax-wrapper{
+  display: flex;
+}
+.image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+.title-modal{
+  margin-top: 20px;
+}
+.section-skills{
+  text-align: center;
+}
+.skills{
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+}
+.skills div{
+  text-align: center;
+}
+.skills div img{
+  height: 60px;
+}
+.services{
+  display: flex;
+ 
+}
+.menu-services{
+ width: 50%;
+ height: 400px;
+ background-color: rgb(35, 37, 36);
+}
+.content-services{
+ width: 50%;
+ height: 400px;
+ background-color: rgb(174, 195, 78);
+ position: relative;
+}
+.services-image img{
+ display: none;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+
+}
+.text-services{
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.text-services a{
+  text-decoration: none;
+  color: brown;
+  cursor: pointer;
+}
+.text-services p{
+   color: azure;
+}
+.scrollsLine{
+  width: 3px;
+  height: 30px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.mainContent{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-text{
+  display: flex;
+  position: relative;
+}
+.line-active{
+  width: 20px;
+  height: 20px;
+  border: brown 4px solid;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  transform: rotate(225deg);
+  z-index: 10;
+  right: -8px;
+  top: 30px;
+
+  display: none;
+
+  
+}
