@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="/index.css">
-  <title>Document</title>
+  <title>MySite</title>
 </head>
 <body>
   <header>
@@ -14,7 +15,7 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">JavaScript</a></li>
           </ul>
@@ -26,7 +27,7 @@
   <main>
     <div class="main-title">
 
-      <div class="parallax-container">
+      <div class="parallax-container inner-container">
         <div class="parallax">
           <img src="/balance-stones.jpg">
           <div class="title">hello my friends</div>
@@ -39,7 +40,7 @@
                <img src="/me.jpg" alt="image">
             </div>
             <div class="col s8">
-              <h2 class="header">About me</h2>
+              <h4 class="header-title">About me</h4>
               <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
               <div class="title-modal">
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
@@ -61,18 +62,23 @@
       <div class="parallax-container">
         <div class="parallax">
           <div class="title">here will be sentence </div>
-          <img  src="/balance-stones.jpg">
+          <img  src="/road (2).jpg">
         </div>
       </div>
 
-      <div class="section white">
+      <div class="section white section section-skills-wrapper">
         <div class="row container">
               <div class="section-skills">
-                <h2 class="header">My skills</h2>
-                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case.</p>
+                <h4 class="header-title">My skills</h4>
+               <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case.</p> 
               </div>
         </div>
         <div class="row container skills">
+          <div class="col s4">
+            <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png" alt="icons">
+            <h6>Development in JavaScript</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
           <div class="col s4">
              <img src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="icons">
              <h6>Development in HTML</h5>
@@ -81,11 +87,6 @@
           <div class="col s4">
             <img src="https://gsix.academy/dist/images/css.png" alt="icons">
             <h6>Development in CSS</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="col s4">
-            <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png" alt="icons">
-            <h6>Development in JavaScript</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -120,12 +121,12 @@
 
       <div class="section white">
         <div class="row container section-skills">
-          <h2 class="header">Portfolio</h2>
+          <h4 class="header-title">Portfolio</h4>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
 
-        <div class="row container">
-          <div class="carousel carousel-slider">
+        <div class="row container slider-wrapper">
+          <div class="carousel carousel-slider center inner-carousel col s8 offset-s2">
             <a class="carousel-item" href="#one!"><img  src="https://cdn.pixabay.com/photo/2016/09/01/10/23/image-1635747_960_720.jpg"></a>
             <a class="carousel-item" href="#two!"><img src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg"></a>
             <a class="carousel-item" href="#three!"><img src="https://cdn.pixabay.com/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg"></a>
@@ -140,13 +141,16 @@
 
         <div class="mainContent" >
            
-         <div>
+         <div class="wrapper-scrollsLine">
           <div class="scrollsLine"></div>
           <div class="scrollsLine"></div>
           <div class="scrollsLine"></div>
          </div>
 
          <div class="text-services-wrapper">
+           <div class="title-services">
+             <h6>Services</h6>
+           </div>
            <div class="wrapper-text">
             <div class="text-services">
               <a id ="service" name="#services1">
@@ -216,43 +220,44 @@
 
       <div class="section white">
         <div class="row container section-skills">
-          <h2 class="header">Contact me</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+          <h4 class="header-title">Contact me</h4>
+          <p class="grey-text col s-9 text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
          
        <div class="email-wrapper">
           <div class="row container">
             <div class="col s5">
               <div class="row">
-                <div class="col s3 offset-s4">
-                   logo
+                <div class="col s3 offset-s2 send-image">
+                   <img src="https://savemyass.biz/img/message.png" alt="image">
                 </div>
               </div>
             </div>   
  
             <form class="col s7 ">
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s5">
                   <input  id="first_name" type="text" class="validate">
                   <label for="first_name">First Name</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col s5">
                   <input id="last_name" type="text" class="validate">
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12 ">
+                <div class="input-field col s10 ">
                   <input id="email" type="email" class="validate">
                   <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12 ">
+                <div class="input-field col s10 ">
                   <textarea id="textarea2" class="materialize-textarea" data-length="120" maxlength="120"></textarea>
                   <label for="textarea2">Textarea</label>
                 </div>
               </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
             </form>
           </div>
           </div>

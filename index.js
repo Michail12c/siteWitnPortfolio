@@ -5,7 +5,11 @@ const app = express()
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html') )
 })
-app.use(express.static('public'))
+
+app.get('/portfolio', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'portfolio.html'))
+})
+app.use(express.static(path.join(__dirname, 'public')))
 
 const PORT = process.env.PORT || 3000
 
