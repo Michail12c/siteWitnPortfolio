@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="/index.css">
@@ -36,7 +37,7 @@
 
       <div class="section white">
         <div class="row container parallax-wrapper">
-            <div class="col s4 image">
+            <div class="col s4 image animated fadeInLeft">
                <img src="/me.jpg" alt="image">
             </div>
             <div class="col s8">
@@ -119,7 +120,9 @@
         </div>
       </div>
 
-      <div class="section white">
+ 
+
+      <div class="section white #e8eaf6 indigo lighten-5 section-slider">
         <div class="row container section-skills">
           <h4 class="header-title">Portfolio</h4>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -127,11 +130,19 @@
 
         <div class="row container slider-wrapper">
           <div class="carousel carousel-slider center inner-carousel col s8 offset-s2">
-            <a class="carousel-item" href="#one!"><img  src="https://cdn.pixabay.com/photo/2016/09/01/10/23/image-1635747_960_720.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="https://cdn.pixabay.com/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Water_shores_in_nature.jpg"></a>
+            <!-- <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="https://cdn.pixabay.com/photo/2016/09/01/10/23/image-1635747_960_720.jpg"></a> -->
+            <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="/sasha.jpg"></a>
+            <a class="carousel-item" href="#two!" data-id="2elem"><img src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg"></a>
+            <a class="carousel-item" href="#three!" data-id="3elem"><img src="https://cdn.pixabay.com/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg"></a>
+            <a class="carousel-item" href="#four!" data-id="4elem"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Water_shores_in_nature.jpg"></a>
           </div>
+        </div>
+
+        <div class="indicator-block">
+          <div id="1elem" class="carousel-indicator fon"></div>
+          <div id="2elem" class="carousel-indicator"></div>
+          <div id="3elem" class="carousel-indicator"></div>
+          <div id="4elem" class="carousel-indicator"></div>
         </div>
       </div>
       </div>  
@@ -211,13 +222,9 @@
        </div>
      </div> 
 
-
-     
       
-         
 
-
-
+    
       <div class="section white">
         <div class="row container section-skills">
           <h4 class="header-title">Contact me</h4>
@@ -234,26 +241,26 @@
               </div>
             </div>   
  
-            <form class="col s7 ">
+            <form class="col s7" action="/" method="POST">
               <div class="row">
                 <div class="input-field col s5">
-                  <input  id="first_name" type="text" class="validate">
+                  <input  id="first_name" name="first-name" type="text" class="validate" >
                   <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field col s5">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="last_name" name="last-name" type="text" class="validate" >
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s10 ">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" name="email" type="email" class="validate">
                   <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s10 ">
-                  <textarea id="textarea2" class="materialize-textarea" data-length="120" maxlength="120"></textarea>
+                  <textarea id="textarea2" name="textarea2" type="text" class="materialize-textarea" data-length="120" maxlength="120"></textarea>
                   <label for="textarea2">Textarea</label>
                 </div>
               </div>
@@ -300,9 +307,12 @@
       </div>
     </div>
   </footer>
-
-
-
+  
+  <a href="#up" class="pageup" onclick="return up()">
+    <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+    </svg>
+</a>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="/main.js"></script>
   <script src="/index.js"></script>

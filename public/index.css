@@ -75,7 +75,6 @@
 .content-services{
  width: 50%;
  height: 400px;
- background-color: rgb(174, 195, 78);
  position: relative;
 }
 .services-image img{
@@ -83,7 +82,10 @@
  position: absolute;
  width: 100%;
  height: 100%;
-
+ transition: ease-in 0.4s;
+}
+.services-image{
+  transition: ease-in 0.4s;
 }
 .text-services{
   text-align: right;
@@ -161,4 +163,34 @@ margin-top: 50px;
 .slider-wrapper{
 
 }
-
+.indicator-block{
+ display: flex;
+ justify-content: center;
+}
+.carousel-indicator{
+  width: 30px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: #fff;
+}
+.section-slider{
+  padding-bottom: 50px;
+  transition: linear 0.4s;
+}
+.fon{
+  transition: linear 0.4s;
+  background-color:brown;
+}
+.pageup {
+  opacity: 0;
+  width: 26px ;
+  height: 26px;
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
+  z-index: 30;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: 1s all;
+}
