@@ -25,7 +25,7 @@
   position: absolute;
   margin: 0 auto;
   text-align: center;
-  top: 40%;
+  top: 30%;
   z-index: 10;
 }
 .parallax-wrapper{
@@ -40,6 +40,7 @@
 .title-modal{
   margin-top: 20px;
 }
+
 .section-skills{
   text-align: center;
 }
@@ -50,6 +51,7 @@
   padding-top: 20px;
   display: flex;
   text-align: center;
+  
 }
 .skills div{
   text-align: center;
@@ -72,6 +74,17 @@
  height: 400px;
  background-color: rgb(35, 37, 36);
 }
+.services-mobile{
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.card-mobile{
+  margin-top: 20px;
+}
+
+
 .content-services{
  width: 50%;
  height: 400px;
@@ -157,12 +170,7 @@ margin-top: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.inner-carousel img{
- 
-}
-.slider-wrapper{
 
-}
 .indicator-block{
  display: flex;
  justify-content: center;
@@ -193,4 +201,107 @@ margin-top: 50px;
   cursor: pointer;
   border: 1px solid white;
   transition: 1s all;
+} 
+.navbar-modal{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  text-align: center;
 }
+.section-nav{
+  position: relative;
+}
+.logo-small{
+  display: none;
+}
+.modal{
+  text-align: center;
+  width: 40%;
+}
+.modal-card-navbar{
+  margin-top: 25%;
+}
+#modal{
+  width: 70%;
+}
+.material-icons{
+  font-size: 12px;
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+  .navbar-modal{
+    display: inline-block;
+  }
+  .send-logo{
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .parallax-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills{
+    flex-direction: column;
+    padding-top: 0;
+    width: 40%;
+  }
+  .skills div{
+    margin-top: 40px;
+  }
+  .inner-carousel{
+    margin-bottom: 0;
+  }
+
+
+}
+
+@media (max-width: 575.98px) {
+  .title h1{
+    font-size: 40px;
+  }
+  .brand-logo{
+    display: none;
+  }
+  .logo-small{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    z-index: 10;
+    text-align: center;
+  }
+  .inner-carousel{
+    margin-bottom: -20px;
+  }
+  .services{
+    display: none;
+  }
+  .services-mobile{
+    display: block;
+  }
+  .skills{
+    width: 60%;
+  }
+
+}
+@media (max-width: 400.98px){
+  .inner-carousel{
+    margin-bottom: -120px;
+  }
+}
+
+
+
+
+
+
+
+
+

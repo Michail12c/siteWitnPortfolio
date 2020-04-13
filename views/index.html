@@ -10,15 +10,29 @@
   <title>MySite</title>
 </head>
 <body>
+  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal #e6ee9c lime lighten-3 modal-card-navbar">
+    <div class="modal-content">
+        <div>
+          <a href="/portfolio">Portfolio</a>
+        </div>
+    </div>
+  </div>
+
   <header>
     <div class="header">
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper section-nav">
           <a href="#" class="brand-logo">Logo</a>
+          <div class="logo-small">Logo</div>
+          <a class="modal-trigger navbar-modal " href="#modal1">Modal</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">JavaScript</a></li>
+
           </ul>
         </div>
       </nav>
@@ -31,24 +45,28 @@
       <div class="parallax-container inner-container">
         <div class="parallax">
           <img src="/balance-stones.jpg">
-          <div class="title">hello my friends</div>
+          <div class="title">
+            <h1>i am front -end developer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
 
       <div class="section white">
         <div class="row container parallax-wrapper">
-            <div class="col s4 image animated fadeInLeft">
+            <div class="col s12 l4 image animated fadeInLeft">
                <img src="/me.jpg" alt="image">
             </div>
-            <div class="col s8">
+            <div class="col s12 l8">
               <h4 class="header-title">About me</h4>
               <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+
               <div class="title-modal">
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-                <div id="modal1" class="modal modal-fixed-footer">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal">Modal</a>
+                <div id="modal" class="modal modal-fixed-footer">
                   <div class="modal-content">
                     <h4>Modal Header</h4>
-                    <p>A bunch of text</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum aliquam ratione corporis accusantium consectetur incidunt nisi sed laudantium ad id omnis corrupti eius tempore, unde minima quas maiores perferendis officiis.</p>
                   </div>
                   <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
@@ -74,18 +92,20 @@
                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case.</p> 
               </div>
         </div>
+
+     
         <div class="row container skills">
-          <div class="col s4">
+          <div class="col l4">
             <img src="https://b.kisscc0.com/20180815/zlq/kisscc0-computer-icons-logo-brand-javascript-angle-js-5b741783856f77.0690615715343348515466.png" alt="icons">
             <h6>Development in JavaScript</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="col s4">
+          <div class="col l4">
              <img src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" alt="icons">
              <h6>Development in HTML</h5>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="col s4">
+          <div class="col l4">
             <img src="https://gsix.academy/dist/images/css.png" alt="icons">
             <h6>Development in CSS</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -93,17 +113,17 @@
         </div>
 
         <div class="row container skills">
-          <div class="col s4">
+          <div class="col l4">
              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="icons">
              <h6>Development in React</h5>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="col s4">
+          <div class="col l4">
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png" alt="icons">
             <h6>Development in Node.js</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="col s4">
+          <div class="col l4">
             <img src="https://bunopus.github.io/presentation-dart/img/typescript-logo.png" alt="icons">
             <h6>Development in TypeScript</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit reiciendis.</p>
@@ -129,9 +149,9 @@
         </div>
 
         <div class="row container slider-wrapper">
-          <div class="carousel carousel-slider center inner-carousel col s8 offset-s2">
-            <!-- <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="https://cdn.pixabay.com/photo/2016/09/01/10/23/image-1635747_960_720.jpg"></a> -->
-            <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="/sasha.jpg"></a>
+          <div class="carousel carousel-slider center inner-carousel col s12">
+            <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="https://cdn.pixabay.com/photo/2016/09/01/10/23/image-1635747_960_720.jpg"></a>
+           <!--  <a class="carousel-item" href="#one!" data-id ="1elem"><img  src="/sasha.jpg"></a> -->
             <a class="carousel-item" href="#two!" data-id="2elem"><img src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg"></a>
             <a class="carousel-item" href="#three!" data-id="3elem"><img src="https://cdn.pixabay.com/photo/2015/09/02/12/30/foot-bridge-918476_960_720.jpg"></a>
             <a class="carousel-item" href="#four!" data-id="4elem"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Water_shores_in_nature.jpg"></a>
@@ -222,18 +242,79 @@
        </div>
      </div> 
 
+     <div class="services-mobile">
+
+      <div class="section white section section-skills-wrapper">
+        <div class="row container">
+              <div class="section-skills">
+                <h4 class="header-title">Services</h4>
+               <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case.</p> 
+              </div>
+        </div>
+      </div>
+
+
+      <div class="card card-mobile">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://cdn.pixabay.com/photo/2018/03/09/04/02/table-3210576_960_720.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+      <div class="card card-mobile">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://w-dog.ru/wallpapers/0/2/302573801053243.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+      <div class="card card-mobile">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://prod.glavportal.com/img/unsafe/664x/filters:contrast(-28):brightness(-25):focal(443x287:1389x1101)/prod.glavportal.com/media/original_images/46222.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+
+
+
+     </div>
+
+     </div>
+
       
 
     
-      <div class="section white">
+      <div class="section white  #e8eaf6 indigo lighten-5 ">
         <div class="row container section-skills">
           <h4 class="header-title">Contact me</h4>
           <p class="grey-text col s-9 text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
          
        <div class="email-wrapper">
-          <div class="row container">
-            <div class="col s5">
+          <div class="row container ">
+            <div class="col l5 send-logo">
               <div class="row">
                 <div class="col s3 offset-s2 send-image">
                    <img src="https://savemyass.biz/img/message.png" alt="image">
@@ -241,25 +322,25 @@
               </div>
             </div>   
  
-            <form class="col s7" action="/" method="POST">
+            <form class="col s12 m8 offset-m2 l7" action="/" method="POST">
               <div class="row">
-                <div class="input-field col s5">
+                <div class="input-field col s6">
                   <input  id="first_name" name="first-name" type="text" class="validate" >
                   <label for="first_name">First Name</label>
                 </div>
-                <div class="input-field col s5">
+                <div class="input-field col s6">
                   <input id="last_name" name="last-name" type="text" class="validate" >
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s10 ">
+                <div class="input-field col s12 ">
                   <input id="email" name="email" type="email" class="validate">
                   <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s10 ">
+                <div class="input-field col s12 ">
                   <textarea id="textarea2" name="textarea2" type="text" class="materialize-textarea" data-length="120" maxlength="120"></textarea>
                   <label for="textarea2">Textarea</label>
                 </div>

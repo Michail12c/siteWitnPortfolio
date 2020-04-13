@@ -1,4 +1,11 @@
 M.AutoInit();
+document.addEventListener("DOMContentLoaded", () => {
+    const logo = document.querySelector('.brand-logo');
+    let width = document.documentElement.clientWidth 
+    if(width < 575){
+      logo.remove()
+    }
+});
 
 const activeElement = document.querySelectorAll('#service'); 
 const scrollsLine = document.querySelectorAll('.scrollsLine');  
@@ -79,3 +86,7 @@ function up() {
 	} else clearTimeout(t);
 	return false;
 }
+
+
+
+
