@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Mychailo Tsoma",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Michail12c/siteWitnPortfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.6",
+    "nodemailer-sendgrid-transport": "^0.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

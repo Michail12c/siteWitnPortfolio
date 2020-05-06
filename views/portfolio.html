@@ -3,10 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/index.css">
   <title>Portfolio</title>
 </head>
 <body>
-  <h1>Portfolio</h1>
-  <a href="/">send home page</a>
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal #e6ee9c lime lighten-3 modal-card-navbar">
+    <div class="modal-content">
+        <div>
+          <a href="/">Головна</a>
+        </div>
+    </div>
+     
+  </div>
+
+  <header>
+    <div class="header ">
+      <nav>
+        <div class="nav-wrapper  section-nav #004d40 teal darken-4">
+          <a class="brand-logo"><img class="image-logo" width="30" src="https://img0.liveinternet.ru/images/attach/b/3/27/350/27350775_256px.png" alt=""></a>
+         
+          <a class="modal-trigger navbar-modal " href="#modal1">Меню</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Головна</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+   <div class="main-portfolio #dcedc8 light-green lighten-4"> 
+    <div class="row container section-skills">
+      <h4 class="header-title">LearnWords</h4>
+      <p class="grey-text text-darken-3 lighten-3 over-slider">Веб-додаток для вивчення іноземних слів</p>
+    </div>
+
+    <div class="portfolio-section">
+      <div>
+        <a href="https://michail12c.github.io/notepad-for-words/#/"><img src="/mysite.PNG"></a> 
+      </div>
+      <div class="description-project">   
+        <p><span>Опис:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, officia officiis nisi non praesentium esse facilis magni sequi recusandae explicabo at nulla labore nihil, laborum architecto, adipisci omnis dignissimos minus!</p>
+      </div> 
+    </div>
+  </div>
+
+  <div class="main-portfolio #f0f4c3 lime lighten-4"> 
+    <div class="row container section-skills">
+      <h4 class="header-title">LearnWords</h4>
+      <p class="grey-text text-darken-3 lighten-3 over-slider">Веб-додаток для вивчення іноземних слів</p>
+    </div>
+
+    <div class="portfolio-section ">
+      <div>
+        <a href="https://michail12c.github.io/notepad-for-words/#/"><img src="/mysite.PNG"></a> 
+      </div>
+      <div class="description-project">   
+        <p><span>Опис:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, officia officiis nisi non praesentium esse facilis magni sequi recusandae explicabo at nulla labore nihil, laborum architecto, adipisci omnis dignissimos minus!</p>
+      </div> 
+    </div>
+  </div>
+
+
+
+
+   
+  </main>
+
+  <footer class="page-footer #004d40 teal darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Сайт-візитка</h5>
+          <p class="grey-text text-lighten-4">Створений для презентації професійних навичок</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Контакти</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/michail-tsoma-098643116/">Linkedin</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/Michail12c">GitHub</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">тел. +38 098 97 83 041</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">telegram:  Michail C.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Copyright Text
+      <p class="grey-text text-lighten-4 right" href="#!">Mychailo Tsoma</p>
+      </div>
+    </div>
+  </footer>
+  
+  <a href="#up" class="pageup" onclick="return up()">
+    <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+    </svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/helper.js"></script>
+  <script src="/main.js"></script>
+  <script src="/index.js"></script>
+  <script src="/wow.min.js"></script>
+  <script>
+     var wow = new WOW;
+      wow.init();
+  </script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 M.AutoInit();
+
 document.addEventListener("DOMContentLoaded", () => {
     const logo = document.querySelector('.brand-logo');
     let width = document.documentElement.clientWidth 
@@ -7,12 +8,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-const activeElement = document.querySelectorAll('#service'); 
-const scrollsLine = document.querySelectorAll('.scrollsLine');  
 
-document.querySelector('#services1').style.display = 'block'; 
+const modal = document.querySelector('.modal-scroll')
+const activeElement = document.querySelectorAll('#service')
+const scrollsLine = document.querySelectorAll('.scrollsLine') 
+
+if(modal){
+  modal.addEventListener('click', () => {
+    calcScroll()
+  }) 
+}
+ 
+
+if(document.querySelector('.modal-close')){
+  document.querySelector('.modal-close').addEventListener('click', () => {
+    document.body.style.marginRight = `0px`
+  })
+  document.querySelector('.main-title').addEventListener('click', () => {
+    document.body.style.marginRight = `0px`
+  })
+}
+
+
+let services = document.querySelector('#services1'); 
+if(services){
+  services.style.display = 'block'; 
+}
+
 document.querySelectorAll('.line-active')[0].style.display = 'block'; 
-scrollsLine[0].style.backgroundColor = 'brown'; 
+scrollsLine[0].style.backgroundColor = 'rgb(34, 33, 33)'; 
 
 activeElement.forEach((elem, index) => {
   elem.addEventListener('click', (e,) => {
@@ -29,7 +53,7 @@ activeElement.forEach((elem, index) => {
     document.querySelector(id).style.display = 'block'
     document.querySelector(id).classList.add('animated', 'fadeIn')
     elem.parentElement.nextElementSibling.style.display = 'block'
-    scrollsLine[index].style.backgroundColor = 'brown' 
+    scrollsLine[index].style.backgroundColor = 'rgb(34, 33, 33)' 
   } )
 })
 
@@ -44,7 +68,6 @@ carousel.forEach(el => {
     setTimeout(() => {
       carousel.forEach(element => {
         if (element.classList.contains('active')){
-         
           let id  = element.dataset.id 
           indicators.forEach(e => {
             e.classList.remove('fon')
@@ -57,10 +80,9 @@ carousel.forEach(el => {
         }
       })
     }, 200 )
- 
-
   })
 })
+
 
 const scrolling = (upSelector) => {
   const upElem = document.querySelector(upSelector);
@@ -77,6 +99,7 @@ const scrolling = (upSelector) => {
 }
 scrolling('.pageup')
 
+
 let t;
 function up() {
 	let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
@@ -88,5 +111,58 @@ function up() {
 }
 
 
+function animateElement(e){
+  e.target.classList.add('bounceIn')
+  setTimeout(() => {
+    e.target.classList.remove('bounceIn')
+  }, 800)
+}
 
 
+ let elemSkills = document.querySelectorAll('.skills-inner');
+ elemSkills.forEach(item => {
+   item.classList.add('animated')
+ }) 
+ elemSkills.forEach(elem=> {
+   elem.addEventListener('mouseleave', animateElement)
+ })
+
+
+let elemSlider = document.querySelector('.slider-wrapper')
+let sectionSlider = document.querySelector('.section-slider')
+ elemSlider.addEventListener('mouseenter', () => {
+   sectionSlider.classList.remove('#e8eaf6')
+   sectionSlider.classList.remove('indigo')
+   sectionSlider.classList.remove('lighten-5')
+   sectionSlider.style.backgroundColor = "rgb(186, 224, 155)"
+ })
+
+  elemSlider.addEventListener('mouseleave', () => { 
+    sectionSlider.style.backgroundColor = "none"
+    sectionSlider.classList.add('#e8eaf6')
+    sectionSlider.classList.add('indigo')
+    sectionSlider.classList.add('lighten-5')
+    elemSlider.classList.add('fadeOutLeft')
+
+    setTimeout(() => {
+      elemSlider.classList.remove('fadeOutLeft')
+    }, 800)
+ })
+
+ let skillsInner = document.querySelectorAll('.skills-inner')
+ let sectionSkillsWrapper = document.querySelector('.section-skills-wrapper'); 
+
+ skillsInner.forEach(item => {
+   item.addEventListener('mouseenter', (e) => {
+     sectionSkillsWrapper.classList.remove('#e8eaf6')
+     sectionSkillsWrapper.classList.remove('indigo')
+     sectionSkillsWrapper.classList.remove('lighten-5')
+     sectionSkillsWrapper.style.backgroundColor = 'rgba(182, 199, 173';
+   })
+  item.addEventListener('mouseleave', () => {
+    sectionSkillsWrapper.style.backgroundColor = 'none';
+    sectionSkillsWrapper.classList.add('#e8eaf6')
+    sectionSkillsWrapper.classList.add('indigo')
+    sectionSkillsWrapper.classList.add('lighten-5') 
+  })  
+ })
